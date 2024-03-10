@@ -20,16 +20,13 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    backgroundImage: {
-                        'bg-program-1': "url('images/2.png')",
-                        'bg-program-2': "url('images/3.png')",
-                        'bg-program-3': "url('images/4.png')"
-                    },
                     colors: {
                         'head-primary': '#131318',
                         'head-description': 'rgba(19, 19, 24, 0.60)',
-                        'bg-primary': '#FF4240'
-
+                        'bg-primary': '#FF4240',
+                        'number-bg': 'rgba(188, 237, 109, 0.10)',
+                        'email-bg': 'rgba(253, 221, 95, 0.10)',
+                        'location-bg': 'rgba(98, 156, 243, 0.10)'
                     }
                 }
             }
@@ -166,7 +163,7 @@
                     and organized <br> resources tailored to your interests and needs.</p>
             </div>
             <!-- program cards -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10 p-6">
                 <!--program card 1  -->
                 <div
                     class="bg-[linear-gradient(to_right_bottom,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url('Images/2.png')] bg-no-repeat bg-cover space-y-4 p-10 pt-20 rounded-xl">
@@ -212,7 +209,7 @@
                     and organized <br> resources tailored to your interests and needs.</p>
             </div>
             <!-- products cards -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10 p-6">
                 <!-- product card 1 -->
                 <div class="card lg:card-side bg-base-100 border p-5">
                     <figure><img src="Images/5.png" alt="Album" class=" w-full h-4/5 rounded-2xl" /></figure>
@@ -491,23 +488,108 @@
                 </p>
             </div>
             <!-- faq section -->
-            <div class="mt-10">
+            <div class="flex flex-col lg:flex-row justify-evenly items-center border rounded-xl  mt-10 m-6 p-6">
                 <div>
-
+                    <img src="Images/11.png" alt="">
                 </div>
                 <div>
-                    <div class="collapse collapse-plus">
+                    <div class="collapse collapse-plus border-b-2 p-5 rounded-none">
                         <input type="radio" name="my-accordion-3" checked="checked" />
                         <div class="collapse-title text-xl font-bold text-head-primary">
                             Our Equipment
                         </div>
                         <div class="collapse-content">
-                            <p>hello</p>
+                            <p class="text-base font-normal text-head-description">Explore our top-quality equipment
+                                designed for maximum performance and reliability.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-b-2 p-5 rounded-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold text-head-primary">
+                            Hockey Training </div>
+                        <div class="collapse-content">
+                            <p class="text-base font-normal text-head-description">Explore our top-quality equipment
+                                designed for maximum performance and reliability.</p>
                         </div>
                     </div>
 
+                    <div class="collapse collapse-plus border-b-2 p-5 rounded-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold text-head-primary">
+                            Private Lessons </div>
+                        <div class="collapse-content">
+                            <p class="text-base font-normal text-head-description">Explore our top-quality equipment
+                                designed for maximum performance and reliability.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-b-2 p-5 rounded-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold text-head-primary">
+                            Ski Touring </div>
+                        <div class="collapse-content">
+                            <p class="text-base font-normal text-head-description">Explore our top-quality equipment
+                                designed for maximum performance and reliability.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-b-2 p-5 rounded-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold text-head-primary">
+                            Booking </div>
+                        <div class="collapse-content">
+                            <p class="text-base font-normal text-head-description">Explore our top-quality equipment
+                                designed for maximum performance and reliability.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus p-5">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold text-head-primary">
+                            Pricings </div>
+                        <div class="collapse-content">
+                            <p class="text-base font-normal text-head-description">Explore our top-quality equipment
+                                designed for maximum performance and reliability.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <!--get in touch section  -->
+        <section class="my-16">
+            <div class="text-center border-dashed border-t-2 border-b-2 p-9 space-y-4">
+                <h3 class="text-4xl font-extrabold text-head-primary capitalize">client question</h3>
+                <p class="text-base font-medium text-head-description"> Our dedicated client support team is here
+                    provide a vast amount of problems solution<br>Reach out to us for expert guidance tailored to your
+                    needs.
+                </p>
+            </div>
+            <!-- contact & form -->
+            <div>
+                <!-- contact -->
+                <div class="border p-12 rounded-2xl mt-10">
+                    <div class="card w-96 bg-number-bg">
+                        <div class="card-body space-y-8">
+                            <img src="Images/Group 1171275317.png" alt="" class="w-14 h-14">
+                            <p class="text-base text-head-description font-normal">Phone Number : <br>
+                                <span class="pt-5 text-head-primary font-bold">(+62) 123-321-543</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-email-bg">
+                        <div class="card-body space-y-8">
+                            <img src="Images/Group 1171275318.png" alt="" class="w-14 h-14">
+                            <p class="text-base text-head-description font-normal">Email : <br>
+                                <span class="pt-5 text-head-primary font-bold">hiron9340@gmail.com</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-location-bg">
+                        <div class="card-body space-y-8">
+                            <img src="Images/Group 1171275321.png" alt="" class="w-14 h-14">
+                            <p class="text-base text-head-description font-normal">Phone Number : <br>
+                                <span class="pt-5 text-head-primary font-bold">(+62) 123-321-543</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
