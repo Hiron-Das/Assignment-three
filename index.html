@@ -27,7 +27,8 @@
                         'number-bg': 'rgba(188, 237, 109, 0.10)',
                         'email-bg': 'rgba(253, 221, 95, 0.10)',
                         'location-bg': 'rgba(98, 156, 243, 0.10)',
-                        field: 'rgba(19, 19, 24, 0.03)'
+                        field: 'rgba(19, 19, 24, 0.03)',
+                        'footer-text': 'rgba(255, 255, 255, 0.60)'
                     }
                 }
             }
@@ -59,7 +60,7 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-4xl font-extrabold">Hockey's</a>
+                    <a class="btn btn-ghost text-3xl lg:text-4xl font-extrabold">Hockey's</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -71,13 +72,14 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn bg-bg-primary text-white">get ticket</a>
+                    <img src="Images/icons/search.png" alt="" class=" hidden lg:w-6 lg:h-6 mr-2">
+                    <a class="btn bg-bg-primary text-white ml-2">get ticket</a>
                 </div>
             </div>
         </nav>
         <!-- header slider -->
-        <section class="h-96 mt-10">
-            <div class="carousel w-full h-full">
+        <section class=" lg:relative mt-10">
+            <div class=" carousel w-full h-96">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="Images/1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -92,6 +94,12 @@
                         <a href="#slide3" class="btn btn-circle">❯</a>
                     </div>
                 </div>
+            </div>
+            <div
+                class=" w-full lg:absolute lg:bottom-8 lg:right-16 lg:w-96 h-48 bg-head-primary rounded-2xl p-8 mt-10 ">
+                <h4 class="text-2xl text-white font-extrabold">Meet all the heroes from the field</h4>
+                <p class="text-base text-footer-text font-medium">Discover the remarkable stories of our field
+                    heroes—the passionate individuals</p>
             </div>
         </section>
     </header>
@@ -640,8 +648,45 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer p-24 bg-head-primary text-base-content">
+        <aside>
+            <h4 class="text-2xl font-extrabold text-white mb-4">Get In Touch</h4>
+            <p class="text-sm font-normal text-footer-text mb-3">Connect with us today and let’s <br> make something
+                great
+                together!</p>
+            <p class="text-base font-medium text-footer-text"><img src="Images/Group 1171275318.png" alt=""
+                    class="w-6 h-6 inline pr-2">
+                hiron9340@gmail.com
+            </p>
+            <p class="text-base font-medium text-footer-text"><img src="Images/Group 1171275317.png" alt=""
+                    class="w-6 h-6 inline pr-2">
+                +8801885158492
+            </p>
+        </aside>
+        <nav class="">
+            <h6 class="text-lg font-bold text-white mb-3">Company</h6>
+            <a class="link link-hover text-base text-footer-text font-medium">About us</a>
+            <a class="link link-hover text-base text-footer-text font-medium">Leadership</a>
+            <a class="link link-hover text-base text-footer-text font-medium">Careers</a>
+            <a class="link link-hover text-base text-footer-text font-medium">News & Articles</a>
+            <a class="link link-hover text-base text-footer-text font-medium">Legal Notice</a>
+        </nav>
+        <nav>
+            <h6 class="text-lg font-bold text-white mb-3">Support</h6>
+            <a class="link link-hover text-base text-footer-text font-medium">Help Center</a>
+            <a class="link link-hover text-base text-footer-text font-medium">FAQ</a>
+            <a class="link link-hover text-base text-footer-text font-medium">Ticket Support</a>
+            <a class="link link-hover text-base text-footer-text font-medium">Contact Us</a>
+        </nav>
+        </div>
+        <nav>
+            <h6 class="text-lg font-bold text-white mb-3">Services</h6>
+            <a class="link link-hover text-base text-footer-text font-medium">Academy </a>
+            <a class="link link-hover text-base text-footer-text font-medium">Group Lesson</a>
+            <a class="link link-hover text-base text-footer-text font-medium">Private Lesson</a>
+            <a class="link link-hover text-base text-footer-text font-medium">Hockeys for Kids</a>
+            <a class="link link-hover text-base text-footer-text font-medium">Hockeys for Adult</a>
+        </nav>
     </footer>
 </body>
 
