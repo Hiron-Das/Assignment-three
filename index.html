@@ -26,7 +26,8 @@
                         'bg-primary': '#FF4240',
                         'number-bg': 'rgba(188, 237, 109, 0.10)',
                         'email-bg': 'rgba(253, 221, 95, 0.10)',
-                        'location-bg': 'rgba(98, 156, 243, 0.10)'
+                        'location-bg': 'rgba(98, 156, 243, 0.10)',
+                        field: 'rgba(19, 19, 24, 0.03)'
                     }
                 }
             }
@@ -562,18 +563,18 @@
                 </p>
             </div>
             <!-- contact & form -->
-            <div>
+            <div class="flex flex-col lg:flex-row justify-around gap-12 p-6">
                 <!-- contact -->
-                <div class="border p-12 rounded-2xl mt-10">
-                    <div class="card w-96 bg-number-bg">
-                        <div class="card-body space-y-8">
+                <div class="border p-12 rounded-2xl space-y-4 mt-10">
+                    <div class="card  bg-number-bg">
+                        <div class="card-body space-y-8 ">
                             <img src="Images/Group 1171275317.png" alt="" class="w-14 h-14">
                             <p class="text-base text-head-description font-normal">Phone Number : <br>
                                 <span class="pt-5 text-head-primary font-bold">(+62) 123-321-543</span>
                             </p>
                         </div>
                     </div>
-                    <div class="card w-96 bg-email-bg">
+                    <div class="card  bg-email-bg">
                         <div class="card-body space-y-8">
                             <img src="Images/Group 1171275318.png" alt="" class="w-14 h-14">
                             <p class="text-base text-head-description font-normal">Email : <br>
@@ -581,14 +582,60 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card w-96 bg-location-bg">
+                    <div class="card  bg-location-bg">
                         <div class="card-body space-y-8">
                             <img src="Images/Group 1171275321.png" alt="" class="w-14 h-14">
-                            <p class="text-base text-head-description font-normal">Phone Number : <br>
-                                <span class="pt-5 text-head-primary font-bold">(+62) 123-321-543</span>
+                            <p class="text-base text-head-description font-normal">Location : <br>
+                                <span class="pt-5 text-head-primary font-bold">438/Apon nibash,chattogram</span>
                             </p>
                         </div>
                     </div>
+                </div>
+                <!-- form -->
+                <div class="mt-10  space-y-4 ">
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        <div class="">
+                            <h4 class="text-xl text-head-primary font-bold capitalize mb-4">your name</h4>
+                            <input type="text" placeholder="Enter your full name"
+                                class="bg-field outline-none p-4 rounded-2xl w-full">
+                        </div>
+                        <div>
+                            <h4 class="text-xl text-head-primary font-bold capitalize mb-4">your email</h4>
+                            <input type="text" placeholder="Enter your email"
+                                class="bg-field outline-none p-4 rounded-2xl  w-full">
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-12 mt-4">
+                        <div class="">
+                            <h4 class="text-xl text-head-primary font-bold capitalize mb-4">subject</h4>
+                            <input type="text" placeholder="Enter your subject"
+                                class="bg-field outline-none p-4 rounded-2xl  w-full">
+                        </div>
+                        <div>
+                            <h4 class="text-xl text-head-primary font-bold capitalize mb-4">phone number</h4>
+                            <input type="text" placeholder="Enter your phone number"
+                                class="bg-field outline-none p-4 rounded-2xl  w-full">
+                        </div>
+                    </div>
+                    <div class=" mt-4">
+                        <h4 class="text-xl text-head-primary font-bold capitalize mb-4">message</h4>
+                        <textarea name="" id="" cols="52" rows="16" placeholder="write your message"
+                            class="bg-field outline-none p-4 rounded-2xl w-full"></textarea>
+                    </div>
+                    <button
+                        class="btn w-full text-xl text-white font-bold text-center bg-bg-primary rounded-xl  mt-4">send
+                        message</button>
+
+                </div>
+            </div>
+            <!-- social media -->
+            <div class="mt-6 space-y-6 bg-field p-6">
+                <h3 class="text-2xl text-head-primary font-extrabold text-center">Social media</h3>
+                <div class="flex gap-5 items-center justify-center ">
+                    <img src="Images/icons/twitter.png" alt="" class="w-6 h-6">
+                    <img src="Images/icons/facebook.png" alt="" class="w-6 h-6">
+                    <img src="Images/icons/instagram.png" alt="" class="w-6 h-6">
+                    <img src="Images/icons/github.png" alt="" class="w-6 h-6">
                 </div>
             </div>
         </section>
