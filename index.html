@@ -80,7 +80,7 @@
         </nav>
         <!-- header slider -->
         <section class=" lg:relative mt-10">
-            <div class=" carousel w-full h-96">
+            <div class=" carousel w-full h-80vh">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="Images/1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -96,8 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div
-                class=" w-full lg:absolute lg:bottom-8 lg:right-16 lg:w-96 h-48 bg-head-primary rounded-2xl p-8 mt-10 ">
+            <div class=" w-full lg:absolute lg:bottom-8 lg:right-16 lg:w-96 h-48 bg-head-primary rounded-2xl p-8 mt-10">
                 <h4 class="text-2xl text-white font-extrabold">Meet all the heroes from the field</h4>
                 <p class="text-base text-footer-text font-medium">Discover the remarkable stories of our field
                     heroes—the passionate individuals</p>
@@ -649,8 +648,8 @@
             </div>
         </section>
     </main>
-    <footer class="footer p-24 bg-head-primary text-base-content">
-        <aside>
+    <footer class="footer py-20 px-12 bg-head-primary ">
+        <aside class="flex justify-center flex-col items-center lg:items-start mx-auto">
             <h4 class="text-2xl font-extrabold text-white mb-4">Get In Touch</h4>
             <p class="text-sm font-normal text-footer-text mb-3">Connect with us today and let’s <br> make something
                 great
@@ -664,23 +663,25 @@
                 +8801885158492
             </p>
         </aside>
-        <nav class="">
-            <h6 class="text-lg font-bold text-white mb-3">Company</h6>
-            <a class="link link-hover text-base text-footer-text font-medium">About us</a>
-            <a class="link link-hover text-base text-footer-text font-medium">Leadership</a>
-            <a class="link link-hover text-base text-footer-text font-medium">Careers</a>
-            <a class="link link-hover text-base text-footer-text font-medium">News & Articles</a>
-            <a class="link link-hover text-base text-footer-text font-medium">Legal Notice</a>
-        </nav>
-        <nav>
-            <h6 class="text-lg font-bold text-white mb-3">Support</h6>
-            <a class="link link-hover text-base text-footer-text font-medium">Help Center</a>
-            <a class="link link-hover text-base text-footer-text font-medium">FAQ</a>
-            <a class="link link-hover text-base text-footer-text font-medium">Ticket Support</a>
-            <a class="link link-hover text-base text-footer-text font-medium">Contact Us</a>
-        </nav>
+        <div
+            class="flex justify-center lg:justify-between lg:w-10/12 items-start gap-8 mx-auto lg:mx-0 text-center lg:text-start">
+            <nav class="flex flex-col ">
+                <h6 class="text-lg font-bold text-white mb-3">Company</h6>
+                <a class="link link-hover text-base text-footer-text font-medium">About us</a>
+                <a class="link link-hover text-base text-footer-text font-medium">Leadership</a>
+                <a class="link link-hover text-base text-footer-text font-medium">Careers</a>
+                <a class="link link-hover text-base text-footer-text font-medium">News & Articles</a>
+                <a class="link link-hover text-base text-footer-text font-medium">Legal Notice</a>
+            </nav>
+            <nav class="flex flex-col ">
+                <h6 class="text-lg font-bold text-white mb-3">Support</h6>
+                <a class="link link-hover text-base text-footer-text font-medium">Help Center</a>
+                <a class="link link-hover text-base text-footer-text font-medium">FAQ</a>
+                <a class="link link-hover text-base text-footer-text font-medium">Ticket Support</a>
+                <a class="link link-hover text-base text-footer-text font-medium">Contact Us</a>
+            </nav>
         </div>
-        <nav>
+        <nav class="flex justify-center flex-col items-center lg:items-start mx-auto">
             <h6 class="text-lg font-bold text-white mb-3">Services</h6>
             <a class="link link-hover text-base text-footer-text font-medium">Academy </a>
             <a class="link link-hover text-base text-footer-text font-medium">Group Lesson</a>
